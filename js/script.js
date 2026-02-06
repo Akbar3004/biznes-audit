@@ -251,12 +251,27 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsContainer.style.display = 'none';
             formContainer.style.display = 'block';
 
-            // Reset form steps? Optional. For now just show form.
-            // form.reset(); currentStep = 0; updateStep(); 
+            // Reset form steps
+            currentStep = 0;
+            updateStep();
 
             formContainer.style.opacity = '0';
             formContainer.offsetHeight;
             formContainer.style.opacity = '1';
         }, 300);
+    });
+
+    // Smooth Scroll for Anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
