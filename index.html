@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biznes Audit & Strategy</title>
+    <meta name="description"
+        content="Biznesingizni keyingi bosqichga olib chiqing. Marketing va moliyaviy audit xizmatlari.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="ri-bar-chart-groupped-fill"></i> BiznesAudit
+            </div>
+            <ul class="nav-links">
+                <li><a href="#audit">Audit</a></li>
+                <li><a href="#calculator">Kalkulyator</a></li>
+                <li><a href="#solutions">Xizmatlar</a></li>
+                <li><a href="#contact" class="btn btn-primary">Bog'lanish</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="badge">🚀 Biznesingizni rivojlantiring</span>
+            <h1>Daromadingizni <span class="gradient-text">Tizimli</span> Oshiring</h1>
+            <p>Marketing va sotuvdagi kamchiliklarni aniqlab, aniq raqamlarga asoslangan strategiya quramiz.</p>
+            <div class="hero-btns">
+                <a href="#calculator" class="btn btn-primary">Auditdan O'tish <i class="ri-arrow-right-line"></i></a>
+                <a href="#audit" class="btn btn-secondary">Natijalarni Ko'rish</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- App Container -->
+        <section id="app" class="section">
+            <div class="container">
+
+                <!-- Step 1: Input Form -->
+                <div id="auditFormContainer" class="glass form-container">
+                    <div class="form-header">
+                        <h2>Biznes Diagnostikasi</h2>
+                        <p>9 ta savolga javob bering va shaxsiy rivojlanish rejangizni oling.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%"></div>
+                        </div>
+                    </div>
+
+                    <form id="auditForm">
+                        <!-- Step 1: Owner -->
+                        <div class="form-step active" data-step="1">
+                            <h3>1. Siz biznes egasimisiz?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="isOwner" value="yes" required checked>
+                                    <span class="opt-icon">👤</span>
+                                    <span class="opt-text">Xa, Biznes egasiman</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="isOwner" value="no">
+                                    <span class="opt-icon">👔</span>
+                                    <span class="opt-text">Yo'q, Menejerman</span>
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                    class="ri-arrow-right-line"></i></button>
+                        </div>
+
+                        <!-- Step 2: CRM -->
+                        <div class="form-step" data-step="2">
+                            <h3>2. Sizda CRM tizimi mavjudmi?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="hasCRM" value="yes">
+                                    <span class="opt-icon">💻</span>
+                                    <span class="opt-text">Xa, mavjud (Amo/Bitrix)</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="hasCRM" value="no" checked>
+                                    <span class="opt-icon">📓</span>
+                                    <span class="opt-text">Yo'q, Excel/Daftar</span>
+                                </label>
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Sales Team -->
+                        <div class="form-step" data-step="3">
+                            <h3>3. Alohida sotuv bo'limi bormi?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="hasSalesTeam" value="yes">
+                                    <span class="opt-icon">👥</span>
+                                    <span class="opt-text">Xa, bo'lim shakllangan</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="hasSalesTeam" value="no" checked>
+                                    <span class="opt-icon">🙋‍♂️</span>
+                                    <span class="opt-text">Yo'q, o'zim sotaman</span>
+                                </label>
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Social Status -->
+                        <div class="form-step" data-step="4">
+                            <h3>4. Ijtimoiy tarmoqlar holati?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="socialStatus" value="good">
+                                    <span class="opt-icon">🔥</span>
+                                    <span class="opt-text">Zo'r / Faol</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="socialStatus" value="average" checked>
+                                    <span class="opt-icon">😐</span>
+                                    <span class="opt-text">O'rtacha</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="socialStatus" value="bad">
+                                    <span class="opt-icon">🕸️</span>
+                                    <span class="opt-text">Yomon / Yo'q</span>
+                                </label>
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Niche -->
+                        <div class="form-step" data-step="5">
+                            <h3>5. Biznesingiz qaysi sohada?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="niche" value="Xizmat ko'rsatish" checked>
+                                    <span class="opt-icon">💇‍♂️</span>
+                                    <span class="opt-text">Xizmat ko'rsatish</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="niche" value="Savdo / Do'kon">
+                                    <span class="opt-icon">🛍️</span>
+                                    <span class="opt-text">Savdo / Do'kon</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="niche" value="Ishlab chiqarish">
+                                    <span class="opt-icon">🏭</span>
+                                    <span class="opt-text">Ishlab chiqarish</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="niche" value="Ta'lim / Kurslar">
+                                    <span class="opt-icon">🎓</span>
+                                    <span class="opt-text">Ta'lim / Kurslar</span>
+                                </label>
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 6: Platform -->
+                        <div class="form-step" data-step="6">
+                            <h3>6. Asosiy reklama platformangiz?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="platform" value="Instagram" checked>
+                                    <span class="opt-icon">📸</span>
+                                    <span class="opt-text">Instagram / FB</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="platform" value="Telegram">
+                                    <span class="opt-icon">✈️</span>
+                                    <span class="opt-text">Telegram</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="platform" value="Google">
+                                    <span class="opt-icon">🔎</span>
+                                    <span class="opt-text">Google / YouTube</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="platform" value="Offline">
+                                    <span class="opt-icon">📢</span>
+                                    <span class="opt-text">Offline / Tavsiya</span>
+                                </label>
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 7: Target Income -->
+                        <div class="form-step" data-step="7">
+                            <h3>7. Oylik DAROMAD maqsadingiz?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="targetIncome" value="3000">
+                                    <span class="opt-icon">💵</span>
+                                    <span class="opt-text">$3,000</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="targetIncome" value="5000">
+                                    <span class="opt-icon">💰</span>
+                                    <span class="opt-text">$5,000</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="targetIncome" value="10000">
+                                    <span class="opt-icon">💎</span>
+                                    <span class="opt-text">$10,000</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="targetIncome" value="50000">
+                                    <span class="opt-icon">🚀</span>
+                                    <span class="opt-text">$50,000+</span>
+                                </label>
+                            </div>
+                            <div class="custom-input-wrapper">
+                                <label>Yoki qo'lda kiriting ($):</label>
+                                <input type="number" name="targetIncome_custom" class="custom-field"
+                                    placeholder="Masalan: 12000">
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 8: Avg Check -->
+                        <div class="form-step" data-step="8">
+                            <h3>8. O'rtacha chek miqdori?</h3>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="avgCheck" value="20">
+                                    <span class="opt-icon">🏷️</span>
+                                    <span class="opt-text">$10 - $30</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="avgCheck" value="60">
+                                    <span class="opt-icon">🏷️</span>
+                                    <span class="opt-text">$50 - $100</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="avgCheck" value="200">
+                                    <span class="opt-icon">🏷️</span>
+                                    <span class="opt-text">$150 - $300</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="avgCheck" value="500">
+                                    <span class="opt-icon">🏷️</span>
+                                    <span class="opt-text">$500+</span>
+                                </label>
+                            </div>
+                            <div class="custom-input-wrapper">
+                                <label>Yoki qo'lda kiriting ($):</label>
+                                <input type="number" name="avgCheck_custom" class="custom-field"
+                                    placeholder="Masalan: 75">
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="button" class="btn btn-primary next-step">Keyingi <i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 9: Conversion -->
+                        <div class="form-step" data-step="9">
+                            <h3>9. Sotuv konversiyasi?</h3>
+                            <p class="step-sub">Sotuvchilar 10 ta liddan nechtasiga sotadi?</p>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="conversion" value="10">
+                                    <span class="opt-icon">📉</span>
+                                    <span class="opt-text">10% (10 tadan 1 ta)</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="conversion" value="30">
+                                    <span class="opt-icon">📊</span>
+                                    <span class="opt-text">30% (O'rtacha)</span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="conversion" value="50">
+                                    <span class="opt-icon">📈</span>
+                                    <span class="opt-text">50% (Kuchli)</span>
+                                </label>
+                            </div>
+                            <div class="custom-input-wrapper">
+                                <label>Yoki qo'lda kiriting (%):</label>
+                                <input type="number" name="conversion_custom" class="custom-field"
+                                    placeholder="Masalan: 25">
+                            </div>
+                            <div class="nav-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Ortga</button>
+                                <button type="submit" class="btn btn-primary btn-submit">📊 Natijani Ko'rish</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Results Section (Hidden by Default) -->
+                <div id="resultsContainer" class="results-container" style="display: none;">
+                    <div class="section-title">
+                        <h2>Sizning Shaxsiy Audit Xulosangiz</h2>
+                        <p>Sun'iy intellekt asosida tayyorlangan hisobot</p>
+                    </div>
+
+                    <!-- Dynamic Content Will Be Injected Here -->
+                    <div id="dynamicReport"></div>
+
+                    <div class="cta-box glass text-center mt-4">
+                        <h3>Ushbu strategiyani amalga oshirmoqchimisiz?</h3>
+                        <p>Biz bilan bog'laning va biznesingizni yangi bosqichga olib chiqing.</p>
+                        <form class="contact-form-inline">
+                            <input type="text" placeholder="Ismingiz" required>
+                            <input type="tel" placeholder="+998 90 123 45 67" required>
+                            <button class="btn btn-primary">Konsultatsiya olish</button>
+                        </form>
+                    </div>
+
+                    <button id="restartBtn" class="btn btn-secondary mt-4">Qayta hisoblash</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">BiznesAudit</div>
+            <p>&copy; 2026 Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
